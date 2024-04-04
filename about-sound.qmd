@@ -1,0 +1,30 @@
+---
+title: "about-sound.qmd"
+---
+
+# Choosing a sample rate
+
+The same rate is the number of audio samples captured per **second.** Thus, higher sample rates result in recordings with higher frequency bandwidths (i.e. a larger range of audio frequencies), but larger file sizes.
+
+You should use a sample rate that is at least two times the highest frequency you wish to record, a value known as the *Nyquist rate* and the minimum sample rate required to capture a particular frequency.
+
+For reference, here are some common frequency ranges for a variety of animals (these are the frequencies within which these animals HEAR)
+
+| **Taxon**       | **Min freq (kHz)** | **Max freq (kHz)** |
+|-----------------|:------------------:|:------------------:|
+| Many bats       |         2          |        120         |
+| Dolphins        |       0.075        |        150         |
+| Insects         |         10         |         80         |
+| Birds           |         1          |         4          |
+| Frogs and Toads |   0.050 (50 Hz)    |         4          |
+| Dogs            |   0.064 (64 Hz)    |         44         |
+| Elephants       |   0.017 (17 Hz)    |        10.5        |
+| **Humans**      | **0.020 (20 Hz)**  |       **20**       |
+
+Thus, if we want to capture audio that includes bats, we need a sample rate that is going to include many of our bat calls, we would need to sample at 96 kHz or higher.
+
+# Choosing the best gain
+**Gain** refers to the degree to which the audio is amplified as it is recorded. Best would be to use trial and error to see what is best for a particular location. If there is not extreme background noise, a "medium" setting should be ok. 
+
+When gain is too low, the target sounds may not be audible in the recordings. On the other hand, when the gain is too high, the recordings may clip features of the sound spectrum and the original sounds will be distorted. 
+
